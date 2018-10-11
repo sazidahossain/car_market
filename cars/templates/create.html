@@ -3,7 +3,8 @@
 
 {% block title %}Create{% endblock title %}
 
-{% block content %}    
+{% block content %}  
+
 <br>
 <div class="card">
   <h5 class="card-header">Create Car</h5>
@@ -13,9 +14,7 @@
             {% csrf_token %}
             {{form|crispy}}
            
-            <input  name="trial" type="submit" value="Create" class="btn btn-outline-success" >
-            
-            
+            <button  type="submit"  class="btn btn-outline-success" >Create <i class="fas fa-plus"></i></button> 
         </form>
 
     </p>

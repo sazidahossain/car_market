@@ -8,9 +8,10 @@
 <div class="card">
   <h5 class="card-header"> </h5>
   <div class="card-body">
-    {% if car_obj.car_img %}
+    {% if cars.car_img %}
+    <div class="zoom">
               <img class="card-img-top" src="{{cars.car_img.url}}" alt="Card image cap">
-
+</div>
             {% endif %}  
     <h5 class="card-title">{{cars.make}}</h5>
     <p class="card-text">{{cars.model|linebreaks}}</p>
